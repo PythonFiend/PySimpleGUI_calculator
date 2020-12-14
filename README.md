@@ -1,4 +1,4 @@
-# PySimpleGUI_calculator
+# PySimpleGUI Calculator
 A Super Simple PySImpleGUI Calculator
 
 How to use:
