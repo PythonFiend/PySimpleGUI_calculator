@@ -39,8 +39,8 @@ while True:
         for operation in equal:
             if operation in '+-':
                 new_equal = equal.split(operation)
-                equal = [new_equal[0] + operation + new_equal[1].replace('%', '*0.01*') + new_equal[0] for operation in equal if operation in '+-']
-                equal = equal[0]
+                equal = new_equal[0] + operation + new_equal[1].replace('%', '*0.01*') + new_equal[0]
+                equal = str(eval(equal))
             elif operation in '%*/':
                 equal = equal.replace('%', '*0.01')
     
